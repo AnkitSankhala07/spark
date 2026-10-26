@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Sparkling | Garden Restaurant, Party Plot & Rooms, Deesa</title>
+<meta name="description" content="Pure veg garden restaurant, banquet hall (50 to 500 guests), party plot and rooms on Palanpur Highway, Rasana Mota, Deesa. Call 94093 22022.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&family=Marcellus&family=Mulish:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav" id="top">
+  <a class="brand" href="#top">The Sparkling</a>
+  <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="links"><span></span><span></span></button>
+  <nav id="links">
+    <a href="#stay">Venue</a><a href="#menu">Menu</a><a href="#gallery">Gallery</a><a href="#enquire">Book</a><a href="#visit">Visit</a>
+    <a class="call" href="tel:+919409322022">94093 22022</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <img src="assets/building.jpg" alt="The Sparkling building lit with golden lights at dusk">
+  <div class="hero-text">
+    <p class="veg"><i></i>Pure vegetarian</p>
+    <h1>The Sparkling</h1>
+    <p class="lede">Garden restaurant, banquet hall and party plot on the Palanpur Highway in Deesa.</p>
+    <div class="cta"><a class="btn gold" href="#menu">See the menu</a><a class="btn line" href="#enquire">Book an event</a></div>
+    <p class="status" id="status" aria-live="polite"></p>
+  </div>
+</section>
+
+<section class="services" id="stay">
+  <h2>Everything for a good day out, in one compound</h2>
+  <ul>
+    <li><b>Garden restaurant</b><span>Snacks, lunch and dinner under the trees</span></li>
+    <li><b>Banquet hall</b><span>50 to 500 guests</span></li>
+    <li><b>Party plot</b><span>Weddings, receptions, birthdays</span></li>
+    <li><b>Rooms</b><span>Stay on site</span></li>
+    <li><b>Photoshoot</b><span>Gardens and a lit-up façade</span></li>
+    <li><b>Nursery</b><span>Plants from our gardens</span></li>
+  </ul>
+</section>
+
+<section class="story">
+  <img src="assets/sunset.jpg" alt="The Sparkling sign glowing at sunset">
+  <div>
+    <h2>Dinner starts when the lights come on</h2>
+    <p>Come for lunch between 11:00 AM and 3:30 PM, or for dinner from 7:00 PM to 11:00 PM. Tandoor breads, paneer dishes, sizzlers, Chinese and pizza, all vegetarian, cooked to order. Please allow 20 to 25 minutes after you order.</p>
+  </div>
+</section>
+
+<section class="menu" id="menu">
+  <div class="menu-head">
+    <h2>Menu</h2>
+    <input id="q" type="search" placeholder="Search dishes, e.g. naan" aria-label="Search the menu">
+  </div>
+  <div class="tabs" id="tabs" role="tablist"></div>
+  <div id="list" class="list"></div>
+  <div class="combos">
+    <article><h3>Dal Bati Platter</h3><p>Dal, 4 bati, salad, veg. pulao, butter milk, gud, curd.</p><b>₹349</b></article>
+    <article><h3>Fix Lunch</h3>
+      <dl>
+        <dt>Super Deluxe Lunch</dt><dd>₹250<small>Soup, paneer, veg., dal, jeera rice, papad, butter milk, salad, 3 roti, sweet</small></dd>
+        <dt>Deluxe Lunch</dt><dd>₹230<small>Paneer, veg., dal, jeera rice, papad, butter milk, salad, 3 roti</small></dd>
+        <dt>Pack Lunch</dt><dd>₹230<small>Paneer, veg., dal, jeera rice, papad, butter milk, salad, 3 roti</small></dd>
+      </dl></article>
+  </div>
+  <p class="fine">Prices in rupees. Taxes extra as per government rules and rates can change without notice. Items are served subject to availability. <a href="menu.pdf">Download the printed menu (PDF)</a></p>
+</section>
+
+<section class="gallery" id="gallery">
+  <h2>Weddings, birthdays and quiet dinners</h2>
+  <div class="grid">
+    <img class="tall" src="assets/wedding.jpg" alt="Flower-petal pool and mandap for a wedding" loading="lazy">
+    <img src="assets/hall1.jpg" alt="Banquet hall with stage" loading="lazy">
+    <img src="assets/garden1.jpg" alt="Aerial view of the garden seating" loading="lazy">
+    <img class="tall" src="assets/event.jpg" alt="Birthday heart balloon set-up in the garden" loading="lazy">
+    <img src="assets/hall2.jpg" alt="Banquet hall set for a function" loading="lazy">
+    <img src="assets/entrance.jpg" alt="Front of the Sparkling Garden Restaurant and Banquet" loading="lazy">
+    <img src="assets/garden2.jpg" alt="Garden pathway and pots" loading="lazy">
+  </div>
+</section>
+
+<section class="enquire" id="enquire">
+  <div>
+    <h2>Planning a function?</h2>
+    <p>Tell us what you have in mind and we will pick it up on WhatsApp. The banquet hall seats 50 to 500 people.</p>
+  </div>
+  <form id="form">
+    <label>Your name<input name="name" required autocomplete="name"></label>
+    <label>Occasion
+      <select name="occ"><option>Wedding</option><option>Reception</option><option>Birthday</option><option>Corporate event</option><option>Photoshoot</option><option>Room stay</option><option>Other</option></select></label>
+    <label>Guests<input name="guests" type="number" min="1" inputmode="numeric" placeholder="e.g. 150"></label>
+    <label>Date<input name="date" type="date"></label>
+    <button class="btn gold" type="submit">Send on WhatsApp</button>
+  </form>
+</section>
+
+<section class="visit" id="visit">
+  <h2>Visit us</h2>
+  <div class="cols">
+    <div><h3>Address</h3><p>Rasana Mota, Palanpur Highway,<br>Deesa 385535, Gujarat</p>
+      <a class="btn line" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=The+Sparkling+Garden+Restaurant+Rasana+Mota+Deesa">Open in Google Maps</a></div>
+    <div><h3>Hours</h3><p>Lunch: 11:00 AM to 3:30 PM<br>Dinner: 7:00 PM to 11:00 PM</p></div>
+    <div><h3>Contact</h3><p><a href="tel:+919409322022">94093 22022</a><br><a href="mailto:thesparkling2018@gmail.com">thesparkling2018@gmail.com</a><br><a target="_blank" rel="noopener" href="https://www.instagram.com/sparkling_resorts/">@sparkling_resorts</a></p></div>
+  </div>
+  <ul class="terms"><li>Orders once placed cannot be cancelled.</li><li>Outside food and liquor are not allowed.</li><li>Parking is at the owner's risk.</li><li>All rights of admission are reserved by management.</li></ul>
+</section>
+</main>
+
+<footer><span class="brand">The Sparkling</span><span>© <span id="yr"></span> The Sparkling Garden Restaurant, Deesa</span></footer>
+<a class="fab" href="tel:+919409322022" aria-label="Call The Sparkling">Call</a>
+<script src="menu.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
