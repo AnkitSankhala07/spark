@@ -45,3 +45,11 @@ $("#form").addEventListener("submit",e=>{
   window.open("https://wa.me/919409322022?text="+encodeURIComponent(msg),"_blank","noopener");
 });
 $("#yr").textContent=new Date().getFullYear();
+
+// Reveal content as it enters the viewport.
+const revealItems=document.querySelectorAll("main section:not(.hero), .gallery img, .services li");
+revealItems.forEach((item,index)=>{item.classList.add("reveal");item.style.transitionDelay=`${Math.min(index%6,5)*70}ms`});
+const revealObserver=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("visible");revealObserver.unobserve(entry.target)}});
+},{threshold:.12});
+revealItems.forEach(item=>revealObserver.observe(item));
